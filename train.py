@@ -69,7 +69,7 @@ label3 = tk.Label(website, text="Notification :", width=20, fg="black",
 label3.place(x=400, y=400)
 
 #Notification of 'image trained or not' display box
-message1 = tk.Label(website, text="", bg="#008080", fg="white", width=30,
+message1 = tk.Label(website, text="", bg="#008080", fg="white", width=50,
                    height=2, activebackground="yellow", font=('Cambria', 16, ' bold '))
 message1.place(x=700, y=400)
 
@@ -83,16 +83,16 @@ message2 = tk.Label(website, text="", fg="white", bg="#008080",
                     activeforeground="green", width=50, height=4, font=('Cambria', 16, ' bold '))
 message2.place(x=700, y=650)
 
-def clear():
+def clear1():
     text1.delete(0, 'end')
     result1 = ""
-    message.configure(text=result1)
+    message1.configure(text=result1)
 
 
 def clear2():
     text2.delete(0, 'end')
     result2 = ""
-    message.configure(text=result2)
+    message1.configure(text=result2)
 
 
 def is_number(x):
@@ -270,12 +270,12 @@ def TrackImages():
 
 
 #clear the contents in Employee ID field
-clearButton1 = tk.Button(website, text="Clear", command=clear, fg="#e6b800", bg="#00334d",
+clearButton1 = tk.Button(website, text="Clear", command=clear1, fg="#e6b800", bg="#00334d",
         width=20, height=2, activebackground="Red", font=('Cambria', 16, ' bold '))
 clearButton1.place(x=1000, y=200)
 
 #clear the contents in Employee Name field
-clearButton2 = tk.Button(website, text="Clear", command=clear, fg="#e6b800", bg="#00334d",
+clearButton2 = tk.Button(website, text="Clear", command=clear2, fg="#e6b800", bg="#00334d",
              width=20, height=2, activebackground="Red", font=('Cambria', 16, ' bold '))
 clearButton2.place(x=1000, y=300)
 
